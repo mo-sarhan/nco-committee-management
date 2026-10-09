@@ -1,0 +1,68 @@
+---
+services:
+  db:
+    image: postgres:16.2
+    container_name: nco_db
+    hostname: nco_db
+    networks:
+      - nco_network
+    ports:
+      - "5432:5432"
+    volumes:
+      - nco_database:/var/lib/postgres/data/
+    env_file:
+    - .db.env
+  
+  cache:
+    image: redis
+    container_name: nco_cache
+    hostname: nco_cache
+    networks:
+      - nco_network
+  nsfw:
+      container_name: nsfw
+      image: helloz/nsfw
+        #    networks:
+        #      - my_private_network
+      networks:
+        - nco_network
+      ports:
+        - "6086:6086"
+      # Environment variables
+      environment:
+        - TOKEN=your_token_here
+        - WORKERS=1
+        - WEBUI=on
+          
+  broker:
+    image: rabbitmq:4.2-management
+    container_name: nco_broker
+    hostname: nco_broker
+    ports:
+      - 5672:5672 
+      - 15672:15672 
+    networks:
+      - nco_network
+    restart: always
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: fastapi_pgadmin_nco
+    restart: always
+    networks:
+      - nco_network
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "8080:80"
+
+volumes:
+  nco_database:
+    external: True
+      
+  
+  
+networks:
+  nco_network:
+
+    

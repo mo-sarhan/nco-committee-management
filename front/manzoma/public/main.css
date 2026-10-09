@@ -1,0 +1,206 @@
+@import 'tailwindcss';
+
+html,
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  unicode-bidi: bidi-override;
+}
+
+#app {
+  direction: rtl;
+}
+
+body {
+  background-color: #8080801c !important ;
+  margin: 0;
+  user-select: none;
+  font-family: 'cairo', sans-serif;
+}
+main {
+  background: #f1f1f1;
+}
+main img {
+  z-index: 2;
+}
+#capture-area {
+  padding-bottom: 10px;
+}
+@font-face {
+  font-family: 'cairo';
+  src: url('@/assets/fonts/Cairo-VariableFont_slnt,wght.ttf');
+  /* font-family: normal; */
+  font-weight: normal;
+}
+:root {
+  --sideWidth: 30rem;
+  --sideTransition: 300ms;
+  --dropdownBtn: #ffcb05;
+  --togglerColor: #ffcb05;
+  --mainColor: #ffcb05;
+  --disableColor: #7c6508;
+  --secondColor: #f8c70c;
+  --backgroundTransition: 200ms;
+  --fontColor: #24201e;
+  --primary-color: #faa61a;
+  --hover-primary-color: #d48e19;
+  --secondary-color: #6c757d;
+  --success-color: #28a745;
+  --success-hover-color: #37a951;
+  --danger-color: #fb0018;
+  --background-color: #f4f7f6;
+  --card-color: #ffffff;
+  --dark-blue: #1b4965;
+  /* --header-sectionHeight: 20px */
+}
+
+.slider1,
+.logo,
+.person-cart {
+  z-index: 500 !important;
+}
+ul,
+li {
+  list-style: none;
+  background: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 5px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: black;
+}
+li p {
+  color: white;
+}
+li p:hover {
+  color: black;
+}
+button {
+  cursor: pointer;
+}
+
+.titlePage {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.topTitle {
+  background-color: var(--mainColor);
+  padding: 0px 79px;
+  border-radius: 9px;
+  margin: 0;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+tr td {
+  padding: 5px 10px !important;
+}
+
+.input-field {
+  flex: 1;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+  width: 30%;
+  cursor: pointer;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 10px;
+  width: 30%;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 7px;
+}
+/* input[type='text']:focus,
+input[type='password']:focus {
+  box-shadow: 0px 0px 5px var(--secondColor);
+
+  outline: none;
+} */
+input:focus {
+  box-shadow: 0px 0px 5px var(--secondColor);
+
+  outline: none;
+}
+.container td {
+  font-size: 17px !important;
+  display: revert !important;
+}
+.container td:last-child {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+/* ------------------------buttons----------------------- */
+.btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--hover-primary-color);
+}
+/* ------------------bvoxs------------------------ */
+
+.white-box {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+.header-box {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 10px;
+}
+.p {
+  margin: 0;
+}
+
+/* Confirm Button */
+.btn-confirm {
+  background-color: var(--mainColor) !important; /* Red */
+  border: none !important;
+  color: white !important;
+}
+
+/* Cancel Button */
+.btn-cancel {
+  background-color: #d33 !important; /* Gray */
+  border: none !important;
+  color: white !important;
+}
+
+/* Optional hover effect */
+.btn-confirm:hover {
+  background-color: var(--primary-color) !important;
+}
+
+.btn-cancel:hover {
+  background-color: #b52a2a !important;
+}
+
+.swal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

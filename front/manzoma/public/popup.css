@@ -1,0 +1,49 @@
+.mil-deg {
+  color: red;
+}
+.container table {
+  width: 100%;
+  text-align: center;
+  background: white;
+  border-radius: 11px;
+  box-shadow: 1px 0px 10px #bbbbbb;
+  border-collapse: collapse;
+}
+
+.container th {
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+}
+.container th:last-child {
+  border-left: none;
+}
+.container td {
+  font-size: 20px;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  padding: 5px 0;
+}
+.container td:last-child {
+  border-left: none;
+}
+.container tr:last-child td {
+  border-bottom: none;
+}
+.head-table {
+  border-left: none !important;
+}
+.close-btn {
+  margin: auto;
+  display: flex;
+  /* width: 91px;
+  height: 30px; */
+  margin-top: 12px;
+  font-size: 20px;
+  justify-content: center;
+  border: 1px solid transparent;
+  background: #9c0000;
+  color: white;
+  border-radius: 8px;
+  padding: 10px 25px;
+}

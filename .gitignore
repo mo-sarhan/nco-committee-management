@@ -1,0 +1,354 @@
+# ============================================================
+# ENVIRONMENT VARIABLES AND SECRETS
+# ============================================================
+
+.env
+.env.*
+!.env.example
+!.env.template
+!.env.*.example
+
+# Credentials and secret files
+secrets/
+.secret/
+credentials/
+secrets.json
+credentials.json
+service-account*.json
+*credentials*.json
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+*.jks
+*.keystore
+
+# ============================================================
+# DATABASES AND DATABASE BACKUPS
+# ============================================================
+
+# SQLite
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.sqlite-journal
+*.sqlite-wal
+*.sqlite-shm
+
+# Database dumps and backups
+*.dump
+*.sql
+*.sql.gz
+*.bak
+*.backup
+*.bson
+
+# PostgreSQL
+pgdata/
+postgres_data/
+postgresql_data/
+
+# MySQL / MariaDB
+mysql_data/
+mariadb_data/
+
+# Redis
+redis_data/
+dump.rdb
+appendonly.aof/
+
+# Database backup directories
+backups/
+backup/
+database_backups/
+db_backups/
+
+# ============================================================
+# PYTHON
+# ============================================================
+
+# Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+.ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+pip-wheel-metadata/
+
+# Installer and package manager files
+pip-log.txt
+pip-delete-this-directory.txt
+poetry.toml
+
+# ============================================================
+# PYTHON TESTING AND COVERAGE
+# ============================================================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+pytestdebug.log
+coverage.xml
+
+# ============================================================
+# PYTHON LINTING AND TYPE CHECKING
+# ============================================================
+
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyright/
+.ruff_cache/
+.pytype/
+
+# ============================================================
+# DJANGO
+# ============================================================
+
+# Local settings
+local_settings.py
+
+# Local database
+db.sqlite3
+
+# User-uploaded files
+media/
+private_media/
+uploads/
+uploaded_files/
+
+# Generated static files
+staticfiles/
+
+# Logs
+*.log
+
+# ============================================================
+# FASTAPI / ASGI
+# ============================================================
+
+# Runtime-generated files
+tmp/
+temp/
+runtime/
+*.pid
+*.pid.lock
+
+# Uploaded files
+uploaded_files/
+user_uploads/
+
+# ============================================================
+# DATABASE MIGRATIONS
+# ============================================================
+
+# IMPORTANT:
+# Do not ignore Alembic migrations or Django migrations.
+# They are normally part of the source code and should be committed.
+#
+# Keep:
+# alembic/versions/
+# */migrations/*.py
+#
+# Ignore only Python migration cache files through __pycache__/.
+
+# ============================================================
+# NODE.JS / NPM / YARN / PNPM
+# ============================================================
+
+# Dependencies
+node_modules/
+
+# Package manager logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Package manager caches
+.npm/
+.pnpm-store/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+
+# ============================================================
+# VUE.JS / VITE
+# ============================================================
+
+# Build output
+dist/
+
+# Vite cache
+.vite/
+
+# Vue CLI cache
+.vue-cli-service/
+
+# Nuxt, if used
+.nuxt/
+.output/
+
+# Generated frontend files
+*.tsbuildinfo
+
+# ============================================================
+# FRONTEND TESTING
+# ============================================================
+
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+cypress/videos/
+cypress/screenshots/
+
+# ============================================================
+# FRONTEND ENVIRONMENT VARIABLES
+# ============================================================
+
+# Local environment overrides
+.env.local
+.env.*.local
+
+# IMPORTANT:
+# Never put passwords, private API keys, or database credentials
+# in VITE_* variables. Vite exposes these to browser code.
+
+# ============================================================
+# DOCKER
+# ============================================================
+
+# Local Docker Compose overrides
+docker-compose.override.yml
+docker-compose.override.yaml
+compose.override.yml
+compose.override.yaml
+
+# Local Docker configuration
+.docker/
+
+# ============================================================
+# LOGS
+# ============================================================
+
+logs/
+log/
+*.log
+
+# ============================================================
+# IDEs AND EDITORS
+# ============================================================
+
+# Visual Studio Code
+.vscode/
+
+# JetBrains IDEs
+.idea/
+
+# Vim
+*.swp
+*.swo
+*.swn
+
+# Temporary editor files
+*~
+*.bak~
+
+# ============================================================
+# OPERATING SYSTEM FILES
+# ============================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Linux
+.directory
+.Trash-*
+
+# ============================================================
+# GENERATED FILES
+# ============================================================
+
+*.orig
+*.rej
+*.cache
+
+# ============================================================
+# LOCAL CERTIFICATES AND PRIVATE DIRECTORIES
+# ============================================================
+
+certs/
+certificates/
+private/
+
+# ============================================================
+# TEMPORARY FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.swp
+
+# ============================================================
+# LOCAL BACKUPS AND EXPORTS
+# ============================================================
+
+*.old
+*.backup
+*.bak
+
+# ============================================================
+# MACHINE LEARNING / DATA PROCESSING (IF USED)
+# ============================================================
+
+.ipynb_checkpoints/
+data/
+datasets/
+artifacts/
+checkpoints/
+models/
+
+# ============================================================
+# LOCAL CONFIGURATION
+# ============================================================
+
+# Local configuration overrides
+config.local.*
+settings.local.*
+session-ses_ef1a.md
+web_server_nginx
+
